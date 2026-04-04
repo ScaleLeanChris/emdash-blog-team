@@ -5,8 +5,9 @@
   "includes": {
     "company": true,
     "agents": true,
-    "projects": false,
-    "issues": false,
+    "goals": true,
+    "projects": true,
+    "issues": true,
     "skills": true
   },
   "company": {
@@ -448,6 +449,70 @@
       ]
     }
   ],
-  "projects": [],
-  "issues": []
+  "goals": [
+    {
+      "title": "Launch and operate the emdash website",
+      "description": "Get the emdash site fully operational with a defined editorial mission, taxonomy structure, SEO foundation, and regular publishing cadence.",
+      "level": "company",
+      "status": "active"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Website Setup",
+      "description": "Initial setup and onboarding for the emdash website — connect to the CMS, define editorial direction, create taxonomy, publish first content, and configure distribution.",
+      "status": "planned",
+      "goalTitle": "Launch and operate the emdash website"
+    }
+  ],
+  "issues": [
+    {
+      "title": "Connect to emdash instance and verify API access",
+      "description": "Verify the EMDASH_URL and EMDASH_API_TOKEN environment variables are configured. Test connectivity with `GET /auth/me`. Confirm token scopes cover content:read, content:write, media:read, media:write. Run `schema_get_collection` to discover available collections and their field names. Document the schema for the team.",
+      "status": "todo",
+      "priority": "critical",
+      "assigneeAgentSlug": "ceo",
+      "projectName": "Website Setup"
+    },
+    {
+      "title": "Set editorial mission and define content pillars",
+      "description": "Define who the website serves, what value it provides, and what success looks like. Establish 3-5 content pillars (core topics). Document voice and tone guidelines. This mission guides all downstream content decisions.",
+      "status": "todo",
+      "priority": "high",
+      "assigneeAgentSlug": "ceo",
+      "projectName": "Website Setup"
+    },
+    {
+      "title": "Set up taxonomy structure",
+      "description": "Based on the content pillars, create categories (hierarchical) and tags (flat) using the taxonomy API. Set up the primary navigation menu. Ensure taxonomy aligns with the editorial mission.",
+      "status": "todo",
+      "priority": "high",
+      "assigneeAgentSlug": "website-manager",
+      "projectName": "Website Setup"
+    },
+    {
+      "title": "Write and publish first post",
+      "description": "Create the first piece of content for the site. Check the collection schema for field names first. Write in Portable Text format. Include a title, body content, excerpt, and featured image if available. Submit as draft for review, then publish.",
+      "status": "todo",
+      "priority": "high",
+      "assigneeAgentSlug": "content-writer",
+      "projectName": "Website Setup"
+    },
+    {
+      "title": "Configure SEO foundation",
+      "description": "Verify the sitemap is generating correctly for published content. Check for any existing 404 errors via GET /redirects/404s/summary. Set up site-level SEO settings. Ensure the first published post has proper meta title, meta description, and an optimized slug.",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeAgentSlug": "seo-specialist",
+      "projectName": "Website Setup"
+    },
+    {
+      "title": "Set up content distribution channels",
+      "description": "Identify available distribution channels (social media accounts, email newsletters, messaging platforms, etc.). Configure the channels and create templates for post-publish promotion. Draft and distribute the first promotional content for the published post.",
+      "status": "todo",
+      "priority": "medium",
+      "assigneeAgentSlug": "distribution-manager",
+      "projectName": "Website Setup"
+    }
+  ]
 }

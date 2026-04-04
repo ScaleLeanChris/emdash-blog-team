@@ -9,7 +9,7 @@ CEO (strategic direction)
 └── Website Manager (editorial lead)
     ├── Content Writer      — drafts and edits posts in Portable Text
     ├── SEO Specialist      — meta tags, slugs, redirects, 404 monitoring
-    └── Distribution Manager — social media, newsletters, Hermes messaging
+    └── Distribution Manager — social media, newsletters, messaging
 ```
 
 | Agent | What it does | Skills |
@@ -18,7 +18,7 @@ CEO (strategic direction)
 | **Website Manager** | Maintains content calendar, reviews drafts, coordinates the team, makes publish/schedule decisions | emdash, content-strategy |
 | **Content Writer** | Writes blog posts, formats content in Portable Text, uploads images, creates drafts | emdash, copywriting, copy-editing |
 | **SEO Specialist** | Optimizes meta tags, manages slugs and redirects, monitors 404s, audits existing content | emdash, seo-audit, schema-markup, site-architecture |
-| **Distribution Manager** | Promotes published posts across social channels, drafts newsletter content, distributes via Hermes | emdash, social-content |
+| **Distribution Manager** | Promotes published posts across social channels, drafts newsletter content, distributes via available tools | emdash, social-content |
 
 ### Teams
 
@@ -157,7 +157,7 @@ CEO sets editorial mission and content pillars
     │
     └── Triggers promotion → Distribution Manager
         ├── Crafts platform-specific social posts
-        ├── Sends via Hermes to connected channels
+        ├── Posts to configured social and messaging channels
         └── Drafts newsletter content
 ```
 
@@ -208,7 +208,7 @@ The `emdash` skill is specific to emdash CMS. The other seven skills (content-st
 
 ### Connect distribution channels
 
-The Distribution Manager uses [Hermes](https://github.com/NousResearch/hermes) for multi-channel messaging (Telegram, Discord, Slack, etc.). Configure Hermes separately in your Paperclip instance to enable channel distribution.
+The Distribution Manager uses whatever social and messaging tools are available in the agent's environment. Configure your preferred distribution channels (social media APIs, messaging platforms, etc.) separately in your Paperclip instance.
 
 ## Environment variables reference
 
