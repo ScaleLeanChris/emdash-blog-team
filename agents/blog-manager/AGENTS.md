@@ -1,7 +1,7 @@
 ---
 name: Blog Manager
 title: Blog Manager
-reportsTo: null
+reportsTo: ceo
 skills:
   - emdash
   - content-strategy

@@ -16,12 +16,13 @@ EmDash Blog Team is a portable Paperclip company for managing a blog powered by 
 
 The team is organized around a lean editorial model:
 
-1. **Blog Manager** owns editorial direction, content calendar, and publishing cadence
-2. **Content Writer** drafts, edits, and formats blog posts using Portable Text
-3. **SEO Specialist** optimizes content for search, manages redirects, and monitors 404s
-4. **Distribution Manager** promotes published content across social, email, and messaging channels
+1. **CEO** sets strategic direction, defines content pillars, and approves consequential decisions
+2. **Blog Manager** owns the content calendar, publishing cadence, and day-to-day coordination
+3. **Content Writer** drafts, edits, and formats blog posts using Portable Text
+4. **SEO Specialist** optimizes content for search, manages redirects, and monitors 404s
+5. **Distribution Manager** promotes published content across social, email, and messaging channels
 
-All agents share the `emdash` skill for CMS operations. The Blog Manager coordinates work and delegates to specialists.
+All agents share the `emdash` skill for CMS operations. The CEO sets direction, the Blog Manager coordinates execution, and specialists handle their domains.
 
 ## Prerequisites
 

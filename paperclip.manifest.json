@@ -19,6 +19,26 @@
   },
   "agents": [
     {
+      "slug": "ceo",
+      "name": "CEO",
+      "path": "agents/ceo/AGENTS.md",
+      "skills": [
+        "emdash",
+        "content-strategy"
+      ],
+      "role": "agent",
+      "title": "Chief Executive Officer",
+      "reportsToSlug": null,
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    },
+    {
       "slug": "blog-manager",
       "name": "Blog Manager",
       "path": "agents/blog-manager/AGENTS.md",
@@ -28,7 +48,7 @@
       ],
       "role": "agent",
       "title": "Blog Manager",
-      "reportsToSlug": null,
+      "reportsToSlug": "ceo",
       "icon": null,
       "capabilities": null,
       "adapterType": "process",

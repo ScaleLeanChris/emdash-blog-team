@@ -5,15 +5,17 @@ A ready-to-import [Paperclip](https://paperclip.ai) agent company that runs your
 ## The team
 
 ```
-Blog Manager (editorial lead)
-├── Content Writer      — drafts and edits posts in Portable Text
-├── SEO Specialist      — meta tags, slugs, redirects, 404 monitoring
-└── Distribution Manager — social media, newsletters, Hermes messaging
+CEO (strategic direction)
+└── Blog Manager (editorial lead)
+    ├── Content Writer      — drafts and edits posts in Portable Text
+    ├── SEO Specialist      — meta tags, slugs, redirects, 404 monitoring
+    └── Distribution Manager — social media, newsletters, Hermes messaging
 ```
 
 | Agent | What it does | Skills |
 |-------|-------------|--------|
-| **Blog Manager** | Sets editorial direction, maintains content calendar, reviews drafts, makes publish/schedule decisions | emdash, content-strategy |
+| **CEO** | Sets strategic direction, defines content pillars, approves consequential decisions | emdash, content-strategy |
+| **Blog Manager** | Maintains content calendar, reviews drafts, coordinates the team, makes publish/schedule decisions | emdash, content-strategy |
 | **Content Writer** | Writes blog posts, formats content in Portable Text, uploads images, creates drafts | emdash, copywriting, copy-editing |
 | **SEO Specialist** | Optimizes meta tags, manages slugs and redirects, monitors 404s, audits existing content | emdash, seo-audit, schema-markup, site-architecture |
 | **Distribution Manager** | Promotes published posts across social channels, drafts newsletter content, distributes via Hermes | emdash, social-content |
@@ -132,10 +134,12 @@ You should see your user info with role level 40+ (EDITOR or ADMIN).
 ## How the workflow runs
 
 ```
-Heartbeat triggers Blog Manager
+CEO sets editorial mission and content pillars
     │
-    ├── Audits content inventory (what exists, what's stale, what's missing)
-    ├── Plans next batch of content (topics, keywords, deadlines)
+    └── Heartbeat triggers Blog Manager
+        │
+        ├── Audits content inventory (what exists, what's stale, what's missing)
+        ├── Plans next batch of content (topics, keywords, deadlines)
     │
     ├── Assigns writing task → Content Writer
     │   ├── Checks schema for field names
@@ -167,6 +171,7 @@ emdash-blog-team/
 ├── README.md                     # This file
 ├── paperclip.manifest.json       # Import manifest (agents + skills)
 ├── agents/
+│   ├── ceo/AGENTS.md
 │   ├── blog-manager/AGENTS.md
 │   ├── content-writer/AGENTS.md
 │   ├── seo-specialist/AGENTS.md
