@@ -2,7 +2,7 @@
 name: Editorial
 description: Content planning, writing, editing, and publishing workflow
 slug: editorial
-manager: ../../agents/blog-manager/AGENTS.md
+manager: ../../agents/website-manager/AGENTS.md
 includes:
   - ../../agents/content-writer/AGENTS.md
   - ../../agents/seo-specialist/AGENTS.md

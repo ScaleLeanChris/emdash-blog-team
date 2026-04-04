@@ -1,7 +1,7 @@
 ---
 name: Distribution Manager
 title: Distribution Manager
-reportsTo: blog-manager
+reportsTo: website-manager
 skills:
   - emdash
   - social-content

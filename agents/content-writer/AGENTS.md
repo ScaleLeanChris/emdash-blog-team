@@ -1,7 +1,7 @@
 ---
 name: Content Writer
 title: Content Writer
-reportsTo: blog-manager
+reportsTo: website-manager
 skills:
   - emdash
   - copywriting

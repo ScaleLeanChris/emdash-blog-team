@@ -1,7 +1,7 @@
 ---
 name: SEO Specialist
 title: SEO Specialist
-reportsTo: blog-manager
+reportsTo: website-manager
 skills:
   - emdash
   - seo-audit

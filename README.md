@@ -6,7 +6,7 @@ A ready-to-import [Paperclip](https://paperclip.ai) agent company that runs your
 
 ```
 CEO (strategic direction)
-└── Blog Manager (editorial lead)
+└── Website Manager (editorial lead)
     ├── Content Writer      — drafts and edits posts in Portable Text
     ├── SEO Specialist      — meta tags, slugs, redirects, 404 monitoring
     └── Distribution Manager — social media, newsletters, Hermes messaging
@@ -15,14 +15,14 @@ CEO (strategic direction)
 | Agent | What it does | Skills |
 |-------|-------------|--------|
 | **CEO** | Sets strategic direction, defines content pillars, approves consequential decisions | emdash, content-strategy |
-| **Blog Manager** | Maintains content calendar, reviews drafts, coordinates the team, makes publish/schedule decisions | emdash, content-strategy |
+| **Website Manager** | Maintains content calendar, reviews drafts, coordinates the team, makes publish/schedule decisions | emdash, content-strategy |
 | **Content Writer** | Writes blog posts, formats content in Portable Text, uploads images, creates drafts | emdash, copywriting, copy-editing |
 | **SEO Specialist** | Optimizes meta tags, manages slugs and redirects, monitors 404s, audits existing content | emdash, seo-audit, schema-markup, site-architecture |
 | **Distribution Manager** | Promotes published posts across social channels, drafts newsletter content, distributes via Hermes | emdash, social-content |
 
 ### Teams
 
-- **Editorial** — Blog Manager + Content Writer + SEO Specialist (plan → write → optimize → publish)
+- **Editorial** — Website Manager + Content Writer + SEO Specialist (plan → write → optimize → publish)
 - **Growth** — SEO Specialist + Distribution Manager (organic discovery + active promotion)
 
 ## Quick start
@@ -136,7 +136,7 @@ You should see your user info with role level 40+ (EDITOR or ADMIN).
 ```
 CEO sets editorial mission and content pillars
     │
-    └── Heartbeat triggers Blog Manager
+    └── Heartbeat triggers Website Manager
         │
         ├── Audits content inventory (what exists, what's stale, what's missing)
         ├── Plans next batch of content (topics, keywords, deadlines)
@@ -145,7 +145,7 @@ CEO sets editorial mission and content pillars
     │   ├── Checks schema for field names
     │   ├── Writes post in Portable Text
     │   ├── Uploads images via REST API
-    │   └── Creates draft, notifies Blog Manager
+    │   └── Creates draft, notifies Website Manager
     │
     ├── Routes draft for SEO → SEO Specialist
     │   ├── Sets meta title + description
@@ -153,7 +153,7 @@ CEO sets editorial mission and content pillars
     │   ├── Adds internal links
     │   └── Assigns taxonomy terms
     │
-    ├── Blog Manager publishes or schedules
+    ├── Website Manager publishes or schedules
     │
     └── Triggers promotion → Distribution Manager
         ├── Crafts platform-specific social posts
@@ -172,7 +172,7 @@ emdash-blog-team/
 ├── paperclip.manifest.json       # Import manifest (agents + skills)
 ├── agents/
 │   ├── ceo/AGENTS.md
-│   ├── blog-manager/AGENTS.md
+│   ├── website-manager/AGENTS.md
 │   ├── content-writer/AGENTS.md
 │   ├── seo-specialist/AGENTS.md
 │   └── distribution-manager/AGENTS.md

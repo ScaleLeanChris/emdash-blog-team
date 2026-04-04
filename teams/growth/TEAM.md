@@ -2,7 +2,7 @@
 name: Growth
 description: SEO optimization, content distribution, and audience reach
 slug: growth
-manager: ../../agents/blog-manager/AGENTS.md
+manager: ../../agents/website-manager/AGENTS.md
 includes:
   - ../../agents/seo-specialist/AGENTS.md
   - ../../agents/distribution-manager/AGENTS.md
