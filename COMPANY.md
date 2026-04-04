@@ -25,7 +25,6 @@ All agents share the `emdash` skill for CMS operations. The Blog Manager coordin
 
 ## Prerequisites
 
-Set these environment variables in the Paperclip secrets store before importing:
-
-- `EMDASH_URL` — Base URL of the emdash instance
-- `EMDASH_API_TOKEN` — Personal Access Token with `content:read`, `content:write`, `media:read`, `media:write` scopes at EDITOR role or above
+1. A running [emdash](https://github.com/emdash-cms/emdash) instance (Cloudflare or self-hosted)
+2. An emdash Personal Access Token (`ec_pat_*`) with `content:read`, `content:write`, `media:read`, `media:write` scopes at EDITOR role or above
+3. After importing this company, configure each agent's environment variables via the Paperclip API — see [README.md](README.md) for detailed setup instructions
