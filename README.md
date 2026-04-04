@@ -224,6 +224,7 @@ Set via `PATCH /api/agents/{agentId}` with `adapterConfig.env` payload. Values a
 - [emdash-paperclip-skill](https://github.com/ScaleLeanChris/emdash-paperclip-skill) — The standalone emdash skill (use this if you want to add emdash capabilities to your own agent team)
 - [emdash CMS](https://github.com/emdash-cms/emdash) — The CMS itself
 - [Paperclip](https://paperclip.ai) — Multi-agent coordination platform
+- [paperclip.space](https://paperclip.space) — Paperclip community hub, where this package is listed
 
 ## License
 
