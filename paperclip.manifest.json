@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-04-04T21:45:00.000Z",
+  "source": null,
+  "includes": {
+    "company": true,
+    "agents": true,
+    "projects": false,
+    "issues": false,
+    "skills": true
+  },
+  "company": {
+    "path": "COMPANY.md",
+    "name": "EmDash Blog Team",
+    "description": "Agent team for managing an emdash CMS blog — content creation, SEO optimization, taxonomy organization, and multi-channel distribution.",
+    "brandColor": null,
+    "logoPath": null,
+    "requireBoardApprovalForNewAgents": false
+  },
+  "agents": [
+    {
+      "slug": "blog-manager",
+      "name": "Blog Manager",
+      "path": "agents/blog-manager/AGENTS.md",
+      "skills": [
+        "emdash",
+        "content-strategy"
+      ],
+      "role": "agent",
+      "title": "Blog Manager",
+      "reportsToSlug": null,
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    },
+    {
+      "slug": "content-writer",
+      "name": "Content Writer",
+      "path": "agents/content-writer/AGENTS.md",
+      "skills": [
+        "emdash",
+        "copywriting",
+        "copy-editing"
+      ],
+      "role": "agent",
+      "title": "Content Writer",
+      "reportsToSlug": "blog-manager",
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    },
+    {
+      "slug": "seo-specialist",
+      "name": "SEO Specialist",
+      "path": "agents/seo-specialist/AGENTS.md",
+      "skills": [
+        "emdash",
+        "seo-audit",
+        "schema-markup",
+        "site-architecture"
+      ],
+      "role": "agent",
+      "title": "SEO Specialist",
+      "reportsToSlug": "blog-manager",
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    },
+    {
+      "slug": "distribution-manager",
+      "name": "Distribution Manager",
+      "path": "agents/distribution-manager/AGENTS.md",
+      "skills": [
+        "emdash",
+        "social-content"
+      ],
+      "role": "agent",
+      "title": "Distribution Manager",
+      "reportsToSlug": "blog-manager",
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    }
+  ],
+  "skills": [
+    {
+      "key": "emdash-skills/emdash",
+      "slug": "emdash",
+      "name": "emdash",
+      "path": "../emdash-skills/skills/emdash/SKILL.md",
+      "description": "Manage an emdash CMS blog — content, media, SEO, taxonomies, strategy, and distribution.",
+      "sourceType": "local",
+      "sourceLocator": null,
+      "sourceRef": null,
+      "trustLevel": null,
+      "compatibility": "compatible",
+      "metadata": null,
+      "fileInventory": [
+        { "path": "SKILL.md", "kind": "skill" },
+        { "path": "agents/openai.yaml", "kind": "file" },
+        { "path": "references/connection.md", "kind": "reference" },
+        { "path": "references/content/README.md", "kind": "reference" },
+        { "path": "references/content/api.md", "kind": "reference" },
+        { "path": "references/content/patterns.md", "kind": "reference" },
+        { "path": "references/content/gotchas.md", "kind": "reference" },
+        { "path": "references/media/README.md", "kind": "reference" },
+        { "path": "references/media/api.md", "kind": "reference" },
+        { "path": "references/media/patterns.md", "kind": "reference" },
+        { "path": "references/media/gotchas.md", "kind": "reference" },
+        { "path": "references/seo/README.md", "kind": "reference" },
+        { "path": "references/seo/api.md", "kind": "reference" },
+        { "path": "references/seo/patterns.md", "kind": "reference" },
+        { "path": "references/seo/gotchas.md", "kind": "reference" },
+        { "path": "references/taxonomy/README.md", "kind": "reference" },
+        { "path": "references/taxonomy/api.md", "kind": "reference" },
+        { "path": "references/taxonomy/patterns.md", "kind": "reference" },
+        { "path": "references/taxonomy/gotchas.md", "kind": "reference" },
+        { "path": "references/strategy/README.md", "kind": "reference" },
+        { "path": "references/strategy/patterns.md", "kind": "reference" },
+        { "path": "references/strategy/gotchas.md", "kind": "reference" },
+        { "path": "references/distribution/README.md", "kind": "reference" },
+        { "path": "references/distribution/patterns.md", "kind": "reference" },
+        { "path": "references/distribution/gotchas.md", "kind": "reference" }
+      ]
+    }
+  ],
+  "projects": [],
+  "issues": []
+}
