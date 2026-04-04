@@ -219,6 +219,18 @@ The Distribution Manager uses whatever social and messaging tools are available 
 
 Set via `PATCH /api/agents/{agentId}` with `adapterConfig.env` payload. Values are encrypted at rest.
 
+## Updating
+
+Skills and agent definitions are not auto-updated after import. To get the latest version:
+
+```bash
+cd ~/.paperclip/local-companies/emdash-blog-team
+git pull
+npx paperclipai company import --from ~/.paperclip/local-companies/emdash-blog-team --collision replace
+```
+
+This pulls the latest changes and re-imports. Your agent environment variables and task history are preserved — only skill content and agent definitions are replaced.
+
 ## Related
 
 - [emdash-paperclip-skill](https://github.com/ScaleLeanChris/emdash-paperclip-skill) — The standalone emdash skill (use this if you want to add emdash capabilities to your own agent team)
