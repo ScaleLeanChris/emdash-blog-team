@@ -17,20 +17,31 @@ Using the Paperclip skill:
 - Create a company-level goal: "Launch and operate the emdash website"
 - Create a project: "Website Setup" linked to that goal
 
-## Step 3: Set editorial mission
+## Step 3: Ask the board for site direction
 
-This is your most important early decision. Define:
-- Who the website serves
-- What value it provides
+**Do not define the editorial mission yourself.** You don't know what this site is for. Create an issue and assign it to the board (human) requesting:
+
+- What is this website about? Who is the target audience?
+- What are the primary topics or themes?
+- What is the voice and tone? (formal, casual, technical, etc.)
+- What is the goal? (lead generation, thought leadership, documentation, community, etc.)
+- Any existing brand guidelines or content to reference?
+
+Mark this issue as **critical priority**. Block on it — do not proceed with Steps 4-5 until the board responds with direction.
+
+## Step 4: Define editorial mission from board input
+
+Once the board responds, synthesize their input into:
 - 3-5 content pillars (core topics)
 - Voice and tone guidelines
 - Target publishing cadence
+- Success criteria
 
-Document this in a comment on the goal or project.
+Document this as a comment on the goal. This becomes the strategic foundation for all downstream work.
 
-## Step 4: Create onboarding tasks for the team
+## Step 5: Create onboarding tasks for the team
 
-Create and assign these issues (all linked to the Website Setup project):
+Only after the editorial mission is defined, create and assign these issues (all linked to the Website Setup project):
 
 1. **"Set up taxonomy structure"** → assign to Website Manager
    - Create categories and tags based on content pillars

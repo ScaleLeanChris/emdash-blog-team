@@ -43,13 +43,13 @@ Hand off all execution to the **Website Manager**. The Website Manager owns the 
 
 ## First heartbeat (onboarding)
 
-On your first heartbeat, if no published content exists, read `references/onboarding.md` and execute it. This file contains the full onboarding checklist with exact API calls to:
+On your first heartbeat, if no published content exists, read `references/onboarding.md` and execute it. The key steps:
 
-1. Create the company goal and project
-2. Create 6 onboarding issues assigned to each team member
-3. Start with verifying the emdash connection, then set the editorial mission
-
-Complete steps 1-2 yourself, then let the team execute steps 3-6.
+1. Verify emdash connection
+2. Create company goal and project
+3. **Ask the board (human) what the site is about** — do NOT define the editorial mission yourself
+4. Wait for board input before creating team tasks
+5. Once you have direction, define the editorial mission and delegate onboarding to the team
 
 ## Operating rules
 
