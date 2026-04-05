@@ -54,7 +54,7 @@ After import, each agent needs the emdash connection details. Set them via the P
 # List agents to get their IDs
 curl http://127.0.0.1:3100/api/companies/{companyId}/agents
 
-# Configure each agent (repeat for all 4 agents)
+# Configure each agent (repeat for all 5 agents)
 curl -X PATCH "http://127.0.0.1:3100/api/agents/{agentId}" \
   -H "Content-Type: application/json" \
   -d '{
