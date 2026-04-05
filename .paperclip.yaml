@@ -1,0 +1,47 @@
+schema: paperclip/v1
+agents:
+  ceo:
+    inputs:
+      env:
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required
+  website-manager:
+    inputs:
+      env:
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required
+  content-writer:
+    inputs:
+      env:
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required
+  seo-specialist:
+    inputs:
+      env:
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required
+  distribution-manager:
+    inputs:
+      env:
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required

@@ -5,6 +5,9 @@ slug: emdash-blog-team
 schema: agentcompanies/v1
 version: 1.0.0
 license: MIT
+authors:
+  - name: Chris Guill
+  - name: Claude Opus 4.6
 goals:
   - Maintain a consistent publishing cadence with high-quality, SEO-optimized content
   - Grow organic traffic through strategic topic selection, keyword targeting, and technical SEO
