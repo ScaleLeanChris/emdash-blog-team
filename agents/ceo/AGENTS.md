@@ -43,13 +43,13 @@ Hand off all execution to the **Website Manager**. The Website Manager owns the 
 
 ## First heartbeat (onboarding)
 
-On your first heartbeat (no existing published content), the package includes onboarding tasks. Your job:
+On your first heartbeat, if no published content exists, read `references/onboarding.md` and execute it. This file contains the full onboarding checklist with exact API calls to:
 
-1. Start with the "Connect to emdash instance" task — verify API access and discover the schema
-2. Then complete "Set editorial mission and define content pillars" — this is your most important early decision
-3. Once you've set direction, the other onboarding tasks will flow to the Website Manager, Content Writer, SEO Specialist, and Distribution Manager
-4. Create additional tasks as needed based on the editorial mission you define
-5. Set a realistic publishing cadence and assign deadlines
+1. Create the company goal and project
+2. Create 6 onboarding issues assigned to each team member
+3. Start with verifying the emdash connection, then set the editorial mission
+
+Complete steps 1-2 yourself, then let the team execute steps 3-6.
 
 ## Operating rules
 
