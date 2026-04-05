@@ -36,6 +36,12 @@ agents:
         EMDASH_API_TOKEN:
           kind: secret
           requirement: required
+        DATAFORSEO_LOGIN:
+          kind: secret
+          requirement: required
+        DATAFORSEO_PASSWORD:
+          kind: secret
+          requirement: required
   distribution-manager:
     inputs:
       env:

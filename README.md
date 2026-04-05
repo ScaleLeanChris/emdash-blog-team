@@ -194,6 +194,8 @@ The Distribution Manager uses whatever social and messaging tools are available 
 | `EMDASH_URL` | config | All 6 | Base URL of your emdash instance |
 | `EMDASH_API_TOKEN` | secret | All 6 | Personal Access Token (`ec_pat_*`) |
 | `TAVILY_API_KEY` | secret | Researcher only | Tavily API key (https://app.tavily.com) |
+| `DATAFORSEO_LOGIN` | secret | SEO Specialist only | DataForSEO login (https://app.dataforseo.com) |
+| `DATAFORSEO_PASSWORD` | secret | SEO Specialist only | DataForSEO password |
 | `GEMINI_API_KEY` | secret | Graphics Designer only | Google AI Studio API key (https://aistudio.google.com/apikey) |
 
 Set through the Paperclip UI on each agent's adapter config. Values are encrypted at rest.

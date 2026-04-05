@@ -87,7 +87,8 @@
         "emdash",
         "seo-audit",
         "schema-markup",
-        "site-architecture"
+        "site-architecture",
+        "dataforseo"
       ],
       "role": "agent",
       "title": "SEO Specialist",
@@ -488,11 +489,11 @@
       ]
     },
     {
-      "key": "emdash-blog-team/tavily-research",
-      "slug": "tavily-research",
-      "name": "tavily-research",
-      "path": "skills/tavily-research/SKILL.md",
-      "description": "Research topics using the Tavily search API — web search, article extraction, and competitor analysis for content creation.",
+      "key": "emdash-blog-team/dataforseo",
+      "slug": "dataforseo",
+      "name": "dataforseo",
+      "path": "skills/dataforseo/SKILL.md",
+      "description": "Query the DataForSEO API for SEO data including keyword research, SERP analysis, backlink data, and competitor research.",
       "sourceType": "local",
       "sourceLocator": null,
       "sourceRef": null,
@@ -500,11 +501,45 @@
       "compatibility": "compatible",
       "metadata": null,
       "fileInventory": [
-        { "path": "SKILL.md", "kind": "skill" },
-        { "path": "agents/openai.yaml", "kind": "file" },
-        { "path": "references/api.md", "kind": "reference" },
-        { "path": "references/patterns.md", "kind": "reference" },
-        { "path": "references/gotchas.md", "kind": "reference" }
+        {
+          "path": "SKILL.md",
+          "kind": "skill"
+        }
+      ]
+    },
+    {
+      "key": "emdash-blog-team/tavily-research",
+      "slug": "tavily-research",
+      "name": "tavily-research",
+      "path": "skills/tavily-research/SKILL.md",
+      "description": "Research topics using the Tavily search API \u2014 web search, article extraction, and competitor analysis for content creation.",
+      "sourceType": "local",
+      "sourceLocator": null,
+      "sourceRef": null,
+      "trustLevel": null,
+      "compatibility": "compatible",
+      "metadata": null,
+      "fileInventory": [
+        {
+          "path": "SKILL.md",
+          "kind": "skill"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "kind": "file"
+        },
+        {
+          "path": "references/api.md",
+          "kind": "reference"
+        },
+        {
+          "path": "references/patterns.md",
+          "kind": "reference"
+        },
+        {
+          "path": "references/gotchas.md",
+          "kind": "reference"
+        }
       ]
     },
     {
@@ -520,11 +555,26 @@
       "compatibility": "compatible",
       "metadata": null,
       "fileInventory": [
-        { "path": "SKILL.md", "kind": "skill" },
-        { "path": "agents/openai.yaml", "kind": "file" },
-        { "path": "references/api.md", "kind": "reference" },
-        { "path": "references/patterns.md", "kind": "reference" },
-        { "path": "references/gotchas.md", "kind": "reference" }
+        {
+          "path": "SKILL.md",
+          "kind": "skill"
+        },
+        {
+          "path": "agents/openai.yaml",
+          "kind": "file"
+        },
+        {
+          "path": "references/api.md",
+          "kind": "reference"
+        },
+        {
+          "path": "references/patterns.md",
+          "kind": "reference"
+        },
+        {
+          "path": "references/gotchas.md",
+          "kind": "reference"
+        }
       ]
     }
   ],
