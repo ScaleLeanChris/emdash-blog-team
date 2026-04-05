@@ -165,12 +165,12 @@ The Distribution Manager uses whatever social and messaging tools are available 
 
 ## Environment variables reference
 
-| Variable | Where to set | Description |
-|----------|-------------|-------------|
-| `EMDASH_URL` | Agent `adapterConfig.env` | Base URL of your emdash instance |
-| `EMDASH_API_TOKEN` | Agent `adapterConfig.env` | Personal Access Token (`ec_pat_*`) |
+| Variable | Kind | Description |
+|----------|------|-------------|
+| `EMDASH_URL` | config | Base URL of your emdash instance |
+| `EMDASH_API_TOKEN` | secret | Personal Access Token (`ec_pat_*`) |
 
-Set via `PATCH /api/agents/{agentId}` with `adapterConfig.env` payload. Values are encrypted at rest.
+Set through the Paperclip UI on each agent's adapter config. Values are encrypted at rest.
 
 ## Updating
 
