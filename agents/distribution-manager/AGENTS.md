@@ -45,3 +45,5 @@ Hand back to the **Website Manager** with a distribution report. If engagement d
 - Include the full URL in every distribution post
 - On each heartbeat, check for published posts in the last 48 hours that haven't been distributed
 - Use whatever messaging or social tools are available in the agent's environment
+- When preparing social promotion, create a subtask "Generate social graphic for: {post title}" and assign to the Graphics Designer. Specify target platform and dimensions (e.g., "Twitter card 1200x675", "LinkedIn post 1200x627").
+- Use the returned `mediaId` or download the image for social posts

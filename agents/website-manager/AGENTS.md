@@ -43,3 +43,5 @@ Hand off to the **Content Writer** for drafting and editing posts. Hand off to t
 - Prefer scheduling over immediate publishing to maintain a consistent cadence
 - Review the content pipeline on every heartbeat — don't let drafts go stale
 - When in doubt about topic priority, optimize for search demand over novelty
+- Review posts only when both content AND featured image are present — don't publish posts without images
+- Check image quality and relevance before publishing. If an image doesn't fit, comment on the image task requesting a regeneration from the Graphics Designer

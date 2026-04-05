@@ -120,6 +120,26 @@
       "permissions": {},
       "budgetMonthlyCents": 0,
       "metadata": null
+    },
+    {
+      "slug": "graphics-designer",
+      "name": "Graphics Designer",
+      "path": "agents/graphics-designer/AGENTS.md",
+      "skills": [
+        "gemini-imagegen",
+        "emdash"
+      ],
+      "role": "agent",
+      "title": "Graphics Designer",
+      "reportsToSlug": "website-manager",
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
     }
   ],
   "skills": [
@@ -445,6 +465,26 @@
           "path": "references/reverse-engineering.md",
           "kind": "reference"
         }
+      ]
+    },
+    {
+      "key": "emdash-blog-team/gemini-imagegen",
+      "slug": "gemini-imagegen",
+      "name": "gemini-imagegen",
+      "path": "skills/gemini-imagegen/SKILL.md",
+      "description": "Generate images using the Gemini API. Use when asked to create featured images, blog graphics, social media visuals, illustrations, or any image generation task.",
+      "sourceType": "local",
+      "sourceLocator": null,
+      "sourceRef": null,
+      "trustLevel": null,
+      "compatibility": "compatible",
+      "metadata": null,
+      "fileInventory": [
+        { "path": "SKILL.md", "kind": "skill" },
+        { "path": "agents/openai.yaml", "kind": "file" },
+        { "path": "references/api.md", "kind": "reference" },
+        { "path": "references/patterns.md", "kind": "reference" },
+        { "path": "references/gotchas.md", "kind": "reference" }
       ]
     }
   ],

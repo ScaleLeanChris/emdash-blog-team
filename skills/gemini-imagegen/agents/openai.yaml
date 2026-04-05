@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gemini Image Generation"
+  short_description: "Generate images from text prompts using Google Gemini"
+  default_prompt: "Generate a featured image for a blog post about..."

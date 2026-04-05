@@ -7,8 +7,9 @@ A ready-to-import [Paperclip](https://paperclip.ai) agent company that runs your
 ```
 CEO (strategic direction)
 └── Website Manager (editorial lead)
-    ├── Content Writer      — drafts and edits posts in Portable Text
-    ├── SEO Specialist      — meta tags, slugs, redirects, 404 monitoring
+    ├── Content Writer       — drafts and edits posts in Portable Text
+    ├── Graphics Designer    — generates featured images and social graphics via Gemini
+    ├── SEO Specialist       — meta tags, slugs, redirects, 404 monitoring
     └── Distribution Manager — social media, newsletters, messaging
 ```
 
@@ -18,6 +19,7 @@ CEO (strategic direction)
 | **Website Manager** | Maintains content calendar, reviews drafts, coordinates the team, makes publish/schedule decisions | emdash, content-strategy |
 | **Content Writer** | Writes blog posts, formats content in Portable Text, uploads images, creates drafts | emdash, copywriting, copy-editing |
 | **SEO Specialist** | Optimizes meta tags, manages slugs and redirects, monitors 404s, audits existing content | emdash, seo-audit, schema-markup, site-architecture |
+| **Graphics Designer** | Generates featured images and social graphics using Gemini AI, uploads to emdash media library | gemini-imagegen, emdash |
 | **Distribution Manager** | Promotes published posts across social channels, drafts newsletter content, distributes via available tools | emdash, social-content |
 
 ### Teams
@@ -143,12 +145,13 @@ emdash-blog-team/
 │   ├── ceo/AGENTS.md
 │   ├── website-manager/AGENTS.md
 │   ├── content-writer/AGENTS.md
+│   ├── graphics-designer/AGENTS.md
 │   ├── seo-specialist/AGENTS.md
 │   └── distribution-manager/AGENTS.md
 ├── teams/
 │   ├── editorial/TEAM.md
 │   └── growth/TEAM.md
-└── skills/                       # All 8 skills bundled
+└── skills/                       # All 9 skills bundled
     ├── emdash/                   #   Core CMS skill (25 reference files)
     ├── content-strategy/         #   Editorial planning
     ├── copywriting/              #   Writing craft
@@ -156,6 +159,7 @@ emdash-blog-team/
     ├── seo-audit/                #   Technical SEO diagnosis
     ├── schema-markup/            #   Structured data
     ├── site-architecture/        #   Information hierarchy
+    ├── gemini-imagegen/          #   AI image generation via Gemini
     └── social-content/           #   Platform-specific social posts
 ```
 
@@ -181,10 +185,11 @@ The Distribution Manager uses whatever social and messaging tools are available 
 
 ## Environment variables reference
 
-| Variable | Kind | Description |
-|----------|------|-------------|
-| `EMDASH_URL` | config | Base URL of your emdash instance |
-| `EMDASH_API_TOKEN` | secret | Personal Access Token (`ec_pat_*`) |
+| Variable | Kind | Which agents | Description |
+|----------|------|-------------|-------------|
+| `EMDASH_URL` | config | All 6 | Base URL of your emdash instance |
+| `EMDASH_API_TOKEN` | secret | All 6 | Personal Access Token (`ec_pat_*`) |
+| `GEMINI_API_KEY` | secret | Graphics Designer only | Google AI Studio API key (https://aistudio.google.com/apikey) |
 
 Set through the Paperclip UI on each agent's adapter config. Values are encrypted at rest.
 

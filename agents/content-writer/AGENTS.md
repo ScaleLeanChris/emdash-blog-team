@@ -44,3 +44,6 @@ Hand back to the **Blog Manager** when a draft is ready for review. The Blog Man
 - Write for humans first, search engines second — but include target keywords naturally
 - Structure posts with clear H2/H3 hierarchy using Portable Text block styles
 - Keep excerpts under 160 characters for SEO snippet compatibility
+- After creating a draft post, create a subtask "Generate featured image for: {post title}" and assign to the Graphics Designer. Include the post title, excerpt, and relevant content pillars in the description for prompt context.
+- Wait for Graphics Designer to comment with the `mediaId` before marking the post ready for review
+- Set the `mediaId` in the post's `featured_image` field via `content_update`
