@@ -48,23 +48,39 @@ npx paperclipai company import --from ~/.paperclip/local-companies/emdash-blog-t
 
 ### 4. Configure environment variables
 
-After import, each agent needs the emdash connection details. The `.paperclip.yaml` file declares two required inputs per agent:
+After import, each agent needs the emdash connection details. For **each of the 5 agents**:
+
+1. Go to the agent's page in the Paperclip UI
+2. Open **adapter config → environment variables**
+3. Add `EMDASH_URL` (your emdash instance URL) and `EMDASH_API_TOKEN` (your PAT)
+4. Click **Seal** for the API token (it's a secret)
+5. Run **Test Environment** to verify the variables are set
 
 | Variable | Kind | Description |
 |----------|------|-------------|
 | `EMDASH_URL` | config | Base URL of your emdash instance |
-| `EMDASH_API_TOKEN` | secret | Personal Access Token (`ec_pat_*`) |
+| `EMDASH_API_TOKEN` | secret | Personal Access Token (`ec_pat_*`) — use Seal |
 
-Set these on each agent through the Paperclip UI (agent settings → adapter config → environment variables) or via the Paperclip API. All 5 agents need both variables configured.
+**Troubleshooting:** If the test environment doesn't validate, try toggling the agent's model (e.g., switch from Codex to Claude and back). This forces Paperclip to re-read the adapter config. This is a known workaround.
 
-### 5. Verify
+### 5. Initialize workspaces
+
+The first heartbeat may fail with `"Not inside a trusted directory"` because agent workspaces are not initialized as git repos. If this happens, initialize the workspace manually:
+
+```bash
+cd ~/.paperclip/instances/default/workspaces/{agent-id}
+git init && git commit --allow-empty -m "Initialize workspace"
+```
+
+### 6. First heartbeat
 
 Trigger a heartbeat on the CEO agent. On first run, the CEO will:
 1. Verify the emdash connection using MCP tools
 2. Create a company goal and project
 3. Create onboarding tasks for each team member
+4. Post a strategic brief with content pillars and editorial direction
 
-If the CEO reports it's blocked, check that the env vars are set correctly.
+If the CEO reports it's blocked, check that the env vars are set correctly on that agent.
 
 ## Getting an emdash API token
 
