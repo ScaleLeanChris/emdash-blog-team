@@ -48,70 +48,23 @@ npx paperclipai company import --from ~/.paperclip/local-companies/emdash-blog-t
 
 ### 4. Configure environment variables
 
-After import, each agent needs the emdash connection details. Set them via the Paperclip API:
+After import, each agent needs the emdash connection details. The `.paperclip.yaml` file declares two required inputs per agent:
 
-```bash
-# List agents to get their IDs
-curl http://127.0.0.1:3100/api/companies/{companyId}/agents
+| Variable | Kind | Description |
+|----------|------|-------------|
+| `EMDASH_URL` | config | Base URL of your emdash instance |
+| `EMDASH_API_TOKEN` | secret | Personal Access Token (`ec_pat_*`) |
 
-# Configure each agent (repeat for all 5 agents)
-curl -X PATCH "http://127.0.0.1:3100/api/agents/{agentId}" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "adapterConfig": {
-      "env": {
-        "EMDASH_URL": "https://your-blog.example.com",
-        "EMDASH_API_TOKEN": "ec_pat_your_token_here"
-      }
-    }
-  }'
-```
-
-**Important:** There is no UI for agent environment variables yet. You must use the REST API as shown above. The values are stored encrypted and injected into each agent's process at runtime.
-
-#### Bulk configuration script
-
-To configure all four agents at once:
-
-```bash
-COMPANY_ID="your-company-id"
-EMDASH_URL="https://your-blog.example.com"
-EMDASH_TOKEN="ec_pat_your_token_here"
-API="http://127.0.0.1:3100"
-
-# Get all agent IDs for this company
-AGENT_IDS=$(curl -s "$API/api/companies/$COMPANY_ID/agents" | python3 -c "
-import sys, json
-for a in json.load(sys.stdin)['data']:
-    print(a['id'])
-")
-
-# Configure each agent
-for ID in $AGENT_IDS; do
-  curl -s -X PATCH "$API/api/agents/$ID" \
-    -H "Content-Type: application/json" \
-    -d "{
-      \"adapterConfig\": {
-        \"env\": {
-          \"EMDASH_URL\": \"$EMDASH_URL\",
-          \"EMDASH_API_TOKEN\": \"$EMDASH_TOKEN\"
-        }
-      }
-    }"
-  echo " → Configured $ID"
-done
-```
+Set these on each agent through the Paperclip UI (agent settings → adapter config → environment variables) or via the Paperclip API. All 5 agents need both variables configured.
 
 ### 5. Verify
 
-Check that agents can reach emdash:
+Trigger a heartbeat on the CEO agent. On first run, the CEO will:
+1. Verify the emdash connection using MCP tools
+2. Create a company goal and project
+3. Create onboarding tasks for each team member
 
-```bash
-curl -s -H "Authorization: Bearer $EMDASH_TOKEN" \
-  "$EMDASH_URL/_emdash/api/auth/me"
-```
-
-You should see your user info with role level 40+ (EDITOR or ADMIN).
+If the CEO reports it's blocked, check that the env vars are set correctly.
 
 ## Getting an emdash API token
 
