@@ -4,7 +4,7 @@ description: Agent team for managing an emdash CMS blog — content creation, SE
 slug: emdash-blog-team
 schema: agentcompanies/v1
 version: 1.0.0
-license: MIT
+license: TBD
 authors:
   - name: Chris Guill
   - name: Claude Opus 4.6
