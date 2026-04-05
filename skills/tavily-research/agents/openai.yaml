@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tavily Research"
+  short_description: "Web search and article extraction for content research"
+  default_prompt: "Research the topic and provide sources, key findings, and content angles."

@@ -45,6 +45,18 @@ agents:
         EMDASH_API_TOKEN:
           kind: secret
           requirement: required
+  researcher:
+    inputs:
+      env:
+        TAVILY_API_KEY:
+          kind: secret
+          requirement: required
+        EMDASH_URL:
+          kind: config
+          requirement: required
+        EMDASH_API_TOKEN:
+          kind: secret
+          requirement: required
   graphics-designer:
     inputs:
       env:

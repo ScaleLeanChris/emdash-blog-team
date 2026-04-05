@@ -38,6 +38,7 @@ Hand back to the **Blog Manager** when a draft is ready for review. The Blog Man
 
 ## Operating rules
 
+- Before writing a new post, create a subtask "Research: {topic}" and assign to the Researcher. Wait for the research brief before writing. Use the sources and data points from the brief in the post.
 - **Always use Portable Text** — never send HTML to emdash content fields
 - Always check the schema first — field names vary by collection (e.g., `content` vs `body`)
 - Include the `_rev` token when updating existing content to avoid conflicts

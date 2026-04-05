@@ -21,8 +21,9 @@ The team is organized around a lean editorial model:
 
 1. **CEO** sets strategic direction, defines content pillars, and approves consequential decisions
 2. **Website Manager** owns the content calendar, publishing cadence, and day-to-day coordination
-3. **Content Writer** drafts, edits, and formats blog posts using Portable Text
-4. **Graphics Designer** generates featured images and social graphics using Gemini AI
+3. **Researcher** researches topics, finds sources, and produces research briefs via Tavily
+4. **Content Writer** drafts posts from research briefs, formats in Portable Text
+5. **Graphics Designer** generates featured images and social graphics using Gemini AI
 5. **SEO Specialist** optimizes content for search, manages redirects, and monitors 404s
 6. **Distribution Manager** promotes published content across social, email, and messaging channels
 

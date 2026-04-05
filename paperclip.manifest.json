@@ -122,6 +122,26 @@
       "metadata": null
     },
     {
+      "slug": "researcher",
+      "name": "Researcher",
+      "path": "agents/researcher/AGENTS.md",
+      "skills": [
+        "tavily-research",
+        "emdash"
+      ],
+      "role": "agent",
+      "title": "Researcher",
+      "reportsToSlug": "website-manager",
+      "icon": null,
+      "capabilities": null,
+      "adapterType": "process",
+      "adapterConfig": {},
+      "runtimeConfig": {},
+      "permissions": {},
+      "budgetMonthlyCents": 0,
+      "metadata": null
+    },
+    {
       "slug": "graphics-designer",
       "name": "Graphics Designer",
       "path": "agents/graphics-designer/AGENTS.md",
@@ -465,6 +485,26 @@
           "path": "references/reverse-engineering.md",
           "kind": "reference"
         }
+      ]
+    },
+    {
+      "key": "emdash-blog-team/tavily-research",
+      "slug": "tavily-research",
+      "name": "tavily-research",
+      "path": "skills/tavily-research/SKILL.md",
+      "description": "Research topics using the Tavily search API — web search, article extraction, and competitor analysis for content creation.",
+      "sourceType": "local",
+      "sourceLocator": null,
+      "sourceRef": null,
+      "trustLevel": null,
+      "compatibility": "compatible",
+      "metadata": null,
+      "fileInventory": [
+        { "path": "SKILL.md", "kind": "skill" },
+        { "path": "agents/openai.yaml", "kind": "file" },
+        { "path": "references/api.md", "kind": "reference" },
+        { "path": "references/patterns.md", "kind": "reference" },
+        { "path": "references/gotchas.md", "kind": "reference" }
       ]
     },
     {
